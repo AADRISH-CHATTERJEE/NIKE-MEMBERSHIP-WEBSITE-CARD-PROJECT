@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE MEMBERSHIP CARD</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: #21D4FD;
+            background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .card{
+            width: 360px;
+            height: 610px;
+            background-color: white ;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            
+        }
+        .card img{
+            width: 100%;
+            height: 38%;
+            border-top-left-radius: 20px ;
+            border-top-right-radius: 20px;
+            display: flex;
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* padding: 20px; */
+            gap: 20px;
+            width: 77%;
+        }
+        .amountbox{
+            width: 80%;
+            height: 10%;
+            background-color: #FA8BFF;
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 20px;
+            border-radius: 11px;
+            padding: 10px;
+           
+        }
+        @media (max-width:400px){
+            .amountbox{
+                flex-direction: column;
+            }
+            .rightbox{
+                flex-direction: column;
+            }
+        }
+        .leftbox{
+            width: 120px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .rightbox{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .imgbox img{
+            height: 1.5rem;
+            width: 1.5rem;
+            display: flex;
+        }
+        #pay button{
+            width: 80%;
+            height: 7%;
+            background-color: rgb(27, 27, 93);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        } 
+        .cancel a{
+            text-decoration: none;
+            color: rgb(120, 67, 3);
+            font-weight: bold;
+            font-size: large;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="nikelogo.webp" alt="NIKE LOGO">
+            <div class="textbox">
+                <h2>MEMBERSHIP CARD</h2>
+            <p>Welcome to nike, we provide discounts for our members with minimum 10% off on all orders and 20% off for orders above 7000/-. Become a member now !!!</p>
+            </div>
+            <div class="amountbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="nkicon.webp" alt="nike icon">
+                    </div>
+                    <div class="textamt">
+                        <p>AMOUNT</p>
+                        <p>$99.99/year</p>
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <a href="index.html">ANNUAL MEMBERSHIP</a>
+                </div>
+            </div>
+            <button id="pay">
+                    <a href="index.html" target="_blank"> 
+                    PROCEED TO PAYMENT</button> 
+            <div class="Cancel">
+                <a href="cancel.html">Cancel Order</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
